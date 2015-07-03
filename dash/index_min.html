@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>castLabs DASH Everywhere</title>
+  <link href="http://vjs.zencdn.net/4.11.4/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.11.4/video.js"></script>
+  <style>
+    .vjs-default-skin .vjs-audiotracks-button:before {
+      content: "\e600";
+    }
+  </style>
+  <script type="text/javascript" src="cldasheverywhere.min.js"></script>
+</head>
+<body>
+<video id="vid" class="video-js vjs-default-skin vjs-big-play-centered" preload="auto" width="640px" height="480px">
+ <source src="http://str01.enterplay.com.br/pi/picenc.ism/.mpd" type="application/dash+xml">
+</video>
+<script>
+  var config, player, lastTime = 0, currentTime=0;
+  var config = {
+        "widevineLicenseServerURL": "https://lic.staging.drmtoday.com/license-proxy-widevine/cenc/",
+        "accessLicenseServerURL": "https://lic.staging.drmtoday.com/flashaccess/LicenseTrigger/v1",
+        "playReadyLicenseServerURL": "https://lic.staging.drmtoday.com/license-proxy-headerauth/drmtoday/RightsManager.asmx",
+        "customData": {
+          "merchant": "enterplay",
+          "userId": "purchase",
+          "sessionId": "p0"
+        },
+        "flashFile": "dashas/dashas.swf",
+        "silverlightFile": "dashcs/dashcs.xap",
+        "assetId": "enterplay_test",
+        "autoplay": true,
+        "techs": ["dashjs","dashas","dashcs"]
+    };
+
+  var player = videojs('vid', {
+    autoplay: true,
+    controls: true,
+    plugins: {
+      audiotracks: {},
+      texttracks: {}
+    },
+    techOrder: ['dasheverywhere'],
+    dasheverywhere: config,
+  });
+
+
+</script>
+</body>
+</html>
