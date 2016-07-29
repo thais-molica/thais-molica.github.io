@@ -1,0 +1,65 @@
+body {
+	background: @primary-color;
+	font-family: @font-family;
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	color: @text-color;
+	text-decoration: none;
+	&:hover {
+		.transition();
+		text-decoration: underline;
+	}
+}
+
+header {
+	h1 {
+		background: @os-header-bg;
+		border-bottom: 4px solid @os-border-color; 
+		color: @os-text-color;
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+	}
+	nav {
+		float: left;
+		padding: 10px;
+		width: 150px;
+		&:before {
+			color: @secondary-color;
+			content: "Folders";
+			text-transform: uppercase;
+		}
+		a {
+			color: @secondary-color;
+		}
+	}
+	.tabs {
+		float: left;
+		padding: 10px 0;
+	}
+}
+
+article {
+	.border-radius(2px);
+	background: @file-bg-color;
+	bottom: 120px;
+	left: 170px;
+	position: absolute;
+	right: 5px;
+	top: 110px;
+}
+
+footer {
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}

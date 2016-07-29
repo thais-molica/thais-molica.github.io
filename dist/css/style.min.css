@@ -1,3 +1,4 @@
+/*FONTS*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -17,4 +18,68 @@
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
+}
+body {
+  background: #263238;
+  font-family: 'Arimo', sans-serif;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+header h1 {
+  background: #f0c869;
+  border-bottom: 4px solid #ccaa59;
+  color: #502834;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+header nav {
+  float: left;
+  padding: 10px;
+  width: 150px;
+}
+header nav:before {
+  color: #4d7d8b;
+  content: "Folders";
+  text-transform: uppercase;
+}
+header nav a {
+  color: #4d7d8b;
+}
+header .tabs {
+  float: left;
+  padding: 10px 0;
+}
+article {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #212121;
+  bottom: 120px;
+  left: 170px;
+  position: absolute;
+  right: 5px;
+  top: 110px;
+}
+footer {
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
