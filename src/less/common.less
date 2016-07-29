@@ -37,8 +37,22 @@ header {
 			content: "Folders";
 			text-transform: uppercase;
 		}
+		li {
+			margin: 10px 0;
+		}
 		a {
 			color: @secondary-color;
+			&:before {
+				.icon-font; 
+				content: @icon-folder;
+				margin-right: 5px;
+			}
+			&.active {
+				color: @tertiary-color;
+				&:before {
+					content: @icon-folder-open;
+				}
+			}
 		}
 	}
 	.tabs {
