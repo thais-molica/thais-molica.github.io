@@ -1,0 +1,11 @@
+{
+  "name": "ThaisMolica",
+  "description": "Meu Portifólio.",
+  "main": [
+    "index.html"
+  ],
+  "devDependencies": {
+    "mustache": "latest"
+  },
+  "private": true
+}
