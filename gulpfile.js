@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 
 //tasks
-gulp.task('deploy', ['css']); 
+gulp.task('deploy', ['css', 'js']); 
 gulp.task('default', ['watchLess', 'watchJs']); 
 
 
