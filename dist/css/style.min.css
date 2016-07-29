@@ -93,7 +93,28 @@ header nav a.active:before {
 }
 header .tabs {
   float: left;
+}
+header .tabs a {
+  display: block;
   padding: 10px 0;
+}
+header .tabs a:hover {
+  text-decoration: none;
+}
+header .tabs .close-tab:after {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\ea0f";
+  font-size: 7px;
+  margin-left: 10px;
+  vertical-align: top;
 }
 article {
   -webkit-border-radius: 2px;

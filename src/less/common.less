@@ -57,7 +57,20 @@ header {
 	}
 	.tabs {
 		float: left;
-		padding: 10px 0;
+		a {
+			display: block;
+			padding: 10px 0;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.close-tab:after {
+			.icon-font;
+			content: @icon-cross; 
+			font-size: 7px;
+			margin-left: 10px;
+			vertical-align: top;
+		}
 	}
 }
 
