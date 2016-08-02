@@ -36,6 +36,7 @@ ul {
   padding: 0;
 }
 li {
+  display: inline-block;
   list-style: none;
 }
 a {
@@ -46,7 +47,6 @@ a:hover {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  text-decoration: underline;
 }
 header h1 {
   background: #f0c869;
@@ -67,10 +67,17 @@ header nav:before {
   text-transform: uppercase;
 }
 header nav li {
+  display: block;
   margin: 10px 0;
+}
+header nav li ul {
+  display: none;
 }
 header nav a {
   color: #4d7d8b;
+}
+header nav a:hover {
+  color: #3b5f6a;
 }
 header nav a:before {
   font-family: 'icomoon';
@@ -85,11 +92,24 @@ header nav a:before {
   content: "\e92f";
   margin-right: 5px;
 }
-header nav a.active {
+header nav .active > a {
   color: #80cbc4;
 }
-header nav a.active:before {
+header nav .active > a:before {
   content: "\e930";
+}
+header nav .active ul {
+  display: block;
+  margin-left: 10px;
+}
+header nav .html:before {
+  content: "\eae5";
+}
+header nav .css:before {
+  content: "\eae6";
+}
+header nav .js:before {
+  content: "\e900";
 }
 header .tabs {
   float: left;
@@ -132,4 +152,33 @@ footer {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+footer ul a {
+  display: block;
+  margin: 10px 5px 15px;
+}
+footer ul a:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 25px;
+}
+footer ul a:hover {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+footer .linkedin:before {
+  content: "\eac9";
+}
+footer .github:before {
+  content: "\eab0";
+}
+footer .email:before {
+  content: "\ea8e";
 }

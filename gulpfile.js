@@ -34,12 +34,13 @@ gulp.task('watchLess', function() {
 gulp.task('js',function(done) {
   gulp.src(
       [
+      'src/js/components/jquery/dist/jquery.js',
       'src/js/components/mustache/mustache.js',
       'src/js/*.js'
       ]
     )
     .pipe(concat('scripts.min.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(debug({title: 'JS:'}))
     .pipe(gulp.dest( 'dist/js' ))
     .on('end', done);
