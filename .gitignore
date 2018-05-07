@@ -1,12 +1,3 @@
 
 node_modules
-src/js/components
 
-bkp/_site
-bkp/.DS_Store
-bkp/.jekyll
-bkp/.bundle
-bkp/.sass-cache
-bkp/Gemfile
-bkp/Gemfile.lock
-bkp/node_modules
