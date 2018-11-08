@@ -1,0 +1,35 @@
+@import '../../assets/base.scss';
+
+
+.about {
+
+    h2 {
+        font-size: 30px;
+
+        &:before {
+            @extend .ico_me;
+        }
+
+    }
+
+}
+
+.skills-container {
+    display: flex;
+
+    >div {
+        flex: 1;
+    }
+}
+
+.skills h2:before {
+    @extend .ico_skills;	
+}
+
+.softwares h2:before {
+    @extend .ico_softwares;	
+}
+
+.study h2:before {
+    @extend .ico_study;	
+}

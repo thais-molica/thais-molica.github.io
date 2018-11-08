@@ -1,0 +1,111 @@
+@import '../../assets/base.scss';
+
+.star {
+    font-size: 0;
+
+    &:before {
+        @extend .ico_font;
+        color: lighten(#FF0000, 10);	
+        letter-spacing: -4px;
+        font-size: 18px;
+    }
+
+    &:after {
+        @extend .ico_font;
+        color: lighten($gray, 20);	
+        letter-spacing: -4px;
+        font-size: 18px;
+    }
+
+    &-50:before {
+        content: "b b b b b";
+    }
+
+    &-45:before {
+        content: "b b b b c";	
+    }
+
+    &-40 {
+
+        &:before {
+            content: "b b b b";	
+        }
+    
+        &:after {
+            content: " d";
+        }
+    
+    }
+
+    &-35 {
+    
+        &:before {
+            content: "b b b c";	
+        }
+    
+        &:after {
+            content: " d";
+        }
+    
+    }
+    
+    &-30 {
+    
+        &:before {
+            content: "b b b";	
+        }
+    
+        &:after {
+            content:" d d";
+        }
+    
+    }
+    
+    &-25 {
+    
+        &:before {
+            content:"b b c";	
+        }
+    
+        &:after {
+            content:" d d";
+        }
+    
+    }
+    
+    &-20 {
+    
+        &:before {
+            content:"b b";	
+        }
+    
+        &:after {
+            content:" d d d";
+        }
+    
+    }
+    
+    &-15 {
+    
+        &:before {
+            content:"b c";	
+        }
+    
+        &:after {
+            content:" d d d";
+        }
+    
+    }
+    
+    &-10 {
+    
+        &:before {
+            content:"b";	
+        }
+    
+        &:after {
+            content:" d d d d";
+        }
+    
+    }
+}
