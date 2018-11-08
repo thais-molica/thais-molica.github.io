@@ -1,0 +1,109 @@
+@import '../../assets/base.scss';
+
+header {
+    &:before,
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+    
+    h1 {
+        font-size: 60px;
+        float: left;
+        width: 620px;
+
+        &:before {
+            content: "{";	
+            font-size: 110px;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+
+        &:after {
+            content: "}";	
+            float: right;
+            font-size: 110px;
+            margin: -78px 0 0;
+        }
+
+        strong {
+            @extend %border-box;
+            float: left;
+            width: 87%;
+
+            &:after {
+                color: $important;	
+                content: "!important;";
+                font-size: 15px;
+            }
+
+        }
+
+    }
+
+    .menu {
+        @include box-shadow;
+        right: 10px;
+        position: fixed;	
+
+        ul {
+            float: left;
+            margin: 0;
+            padding: 0;
+
+            li {
+                background: $primary;
+                float: left;
+
+                a {
+                    color: $primary;
+                    float: left;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 10px;	
+                    height: 20px;
+                    padding: 55px 10px 0 10px;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 50px;
+
+                    &:before {
+                        @extend .ico_font;
+                        color: $bg;
+                        float: left;
+                        font-size: 30px;
+                        line-height: 50px;	
+                        left: 0;
+                        position: absolute;
+                        top: 10px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        @extend .transition;
+                        color: $bg;
+                    }
+
+                }
+
+                &.about a:before {
+                    @extend .ico_me;
+                }
+
+                &.projects a:before {
+                    @extend .ico_projects;
+                }
+
+                &.contact a:before {
+                    @extend .ico_comment;
+                }
+
+            }
+
+        }
+
+    }
+
+}

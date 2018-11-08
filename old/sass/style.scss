@@ -1,0 +1,10 @@
+@import 'ico.scss';
+@import 'common.scss';
+@import 'projects.scss';
+@import 'custom.scss';
+@media screen  
+and (max-width : 1000px)  { /*width: 320px - height 568px*/
+	@import 'mobile.scss';
+}
+
+
