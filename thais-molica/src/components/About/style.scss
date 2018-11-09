@@ -7,7 +7,7 @@
         font-size: 30px;
 
         &:before {
-            @extend .ico_me;
+            @extend %ico_me;
         }
 
     }
@@ -23,13 +23,13 @@
 }
 
 .skills h2:before {
-    @extend .ico_skills;	
+    @extend %ico_skills;	
 }
 
 .softwares h2:before {
-    @extend .ico_softwares;	
+    @extend %ico_softwares;	
 }
 
 .study h2:before {
-    @extend .ico_study;	
+    @extend %ico_study;	
 }

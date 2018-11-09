@@ -4,14 +4,14 @@
     font-size: 0;
 
     &:before {
-        @extend .ico_font;
+        @extend %ico_font;
         color: lighten(#FF0000, 10);	
         letter-spacing: -4px;
         font-size: 18px;
     }
 
     &:after {
-        @extend .ico_font;
+        @extend %ico_font;
         color: lighten($gray, 20);	
         letter-spacing: -4px;
         font-size: 18px;

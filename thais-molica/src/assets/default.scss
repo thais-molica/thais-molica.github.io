@@ -69,7 +69,7 @@ h2 {
   text-transform: uppercase;
 
   &:before {
-      @extend .ico_font;
+      @extend %ico_font;
       line-height: 40px;
       margin: 0 10px 0 0;	
   }

@@ -1,0 +1,9 @@
+@import '../../assets/base.scss';
+
+.projects {
+
+    h2:before {
+        @extend %ico_projects;
+    }
+
+}

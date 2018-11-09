@@ -67,7 +67,7 @@ header {
                     width: 80px;
 
                     &:before {
-                        @extend .ico_font;
+                        @extend %ico_font;
                         color: $bg;
                         display: block;
                         font-size: 30px;
@@ -81,15 +81,15 @@ header {
                 }
 
                 &.about a:before {
-                    @extend .ico_me;
+                    @extend %ico_me;
                 }
 
                 &.projects a:before {
-                    @extend .ico_projects;
+                    @extend %ico_projects;
                 }
 
                 &.contact a:before {
-                    @extend .ico_comment;
+                    @extend %ico_comment;
                 }
 
             }
