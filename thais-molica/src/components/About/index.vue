@@ -14,11 +14,22 @@
     <div id="about" class="about">
         <h2>Sobre mim</h2>
             
-            <p>Sou natural da cidade de Taubaté, onde estudei e iniciei minha carreira como Web Designer. Trabalhei em três agências lá (W3t, Vecktor e Onza), onde fazia trabalhos simples de inicio de carreira. (jan/2009- dez/2011) </p>
-            <p>Entao resolvi tentar a vida na cidade grande e mudei para São Paulo para trabalhar na <a href="http://envisiontecnologia.com.br/">Envision Tecnologia</a> como desenvolvedora front-end (fev/2012 - jan/2014), onde aprendi muito sobre css e comecei a utilizar less para desenvolvimento. </p>
-            <p>Depois fiz parte da equive de desenvolvimento front-end da <a href="http://www.folha.uol.com.br/">Folha de S. Paulo</a>. (jan/2014 - fev/2015)</p>
-            <p>Saindo de la fui para uma startup, a <a href="https://www.enterplay.com.br/">EnterPlay</a> (fev/2015 - nov/2016), onde tive a oportunidade de desenvolver meus conhecimentos de JS e UX testando novas ferramentas e participando de decisoes de usabilidade. </p>
-            <p>Atualmente trabalho na <a href="https://www.cvc.com.br/">CVC</a>, na equipe fidelidade que cuida de projetos de whitelabel.</p>
+            <p>
+                Sou natural da cidade de Taubaté, onde estudei e iniciei minha carreira como <strong class="highlight">Web Designer</strong>. 
+                Trabalhei em três agências lá (W3t, Vecktor e Onza), onde fazia trabalhos simples de inicio de carreira. <strong class="highlight-date">(jan/2009- dez/2011) </strong>
+            </p>
+            <p>
+                Então resolvi tentar a vida na cidade grande e mudei para São Paulo para trabalhar na <a href="http://envisiontecnologia.com.br/">Envision Tecnologia</a> 
+                como <strong class="highlight">Desenvolvedora Front-end</strong> <strong class="highlight-date">(fev/2012 - jan/2014)</strong>, onde aprendi muito sobre <strong class="highlight">CSS</strong> e comecei a utilizar <strong class="highlight">Less</strong> para desenvolvimento. 
+                Também tive contato com <strong class="highlight">.NET</strong> e um pouco de <strong class="highlight">Prototipação</strong>. 
+            </p>
+            <p>
+                Depois fiz parte da equive de desenvolvimento <strong class="highlight">Front-end</strong> da <a href="http://www.folha.uol.com.br/">Folha de S. Paulo</a> <strong class="highlight-date">(jan/2014 - fev/2015)</strong>. 
+                Lá trabalhei com equipes grandes e dinânicas. Foi quando comecei a desenvolver em <strong class="highlight">JS</strong> e <strong class="highlight">JQuery</strong>, e escrever templates de um <strong class="highlight">cms</strong> baseado em <strong class="highlight">php</strong>, com uma sintaxe parecida com <strong class="highlight">handlebars</strong>.</p>
+            <p>
+                Saindo de la fui para uma startup, a <a href="https://www.enterplay.com.br/">EnterPlay</a> <strong class="highlight-date">(fev/2015 - nov/2016)</strong>, onde tive a oportunidade de desenvolver meus conhecimentos de <strong class="highlight">JS</strong> e <strong class="highlight">UX</strong> testando novas ferramentas (como <strong class="highlight">Mustache</strong>, <strong class="highlight">Angular</strong> e todo um mundo novo sobre videos na web e players como <strong class="highlight">VideoJS</strong> ) e participando de decisões de usabilidade. </p>
+            <p>
+                Atualmente trabalho na <a href="https://www.cvc.com.br/">CVC</a>, na equipe fidelidade que cuida de projetos de <strong class="highlight">whitelabel</strong> de larga escala usando <strong class="highlight">Git Flow</strong>, <strong class="highlight">Sass</strong>, <strong class="highlight">EmberJS</strong>, <strong class="highlight">React.js</strong>.</p>
             
             <div class="skills-container">
                 <div class="skills">

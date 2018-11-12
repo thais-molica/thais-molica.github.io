@@ -6,6 +6,7 @@
   import './assets/default.scss'
 
   export default {
+    title: "Thaís Molica - Front-end Developer",
     name: "app",
     components: {
       // eslint-disable-next-line
