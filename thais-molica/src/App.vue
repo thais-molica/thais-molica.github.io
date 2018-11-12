@@ -2,6 +2,7 @@
   import Header from "./components/Header/index.vue";
   import About from './components/About/index.vue';
   import Projects from './components/Projects/index.vue';
+  import Footer from './components/Footer/index.vue';
   import './assets/default.scss'
 
   export default {
@@ -10,15 +11,19 @@
       // eslint-disable-next-line
       Header,
       About,
-      Projects
+      Projects,
+      Footer
     }
   };
 </script>
 
 <template>
-  <div class="default-container" id="app">
-    <Header/>
-    <About/>
-    <Projects/>
+  <div>
+    <div class="default-container" id="app">
+      <Header/>
+      <About/>
+      <Projects/>
+    </div>
+    <Footer/>
   </div>
 </template>

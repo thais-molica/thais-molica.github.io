@@ -1,0 +1,50 @@
+@import '../../assets/base.scss';
+
+%footer-link {
+    color: darken($gray, 10);
+    display: inline-block;
+    height: 20px;
+    margin: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    width: 22px;
+
+    &:hover {
+        color: darken($gray, 20);
+    }
+
+    &:before {
+        display: block;
+        font-size: 20px;
+    }
+
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+
+    &-signature {
+        color: $bg;
+        display: block;
+    }
+
+    &-mail{
+        @extend %footer-link;
+
+        &:before {
+            @extend %ico_font;
+            @extend %ico_comment;
+        }
+    }
+
+    &-linkedin {
+        @extend %footer-link;
+
+        &:before {
+            @extend %ico_font;
+            @extend %ico_linkedin;
+        }
+
+    }
+}
