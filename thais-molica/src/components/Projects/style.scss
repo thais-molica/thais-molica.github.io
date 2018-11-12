@@ -6,4 +6,39 @@
         @extend %ico_projects;
     }
 
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        background: $bg;
+        border: 1px solid lighten($gray,20);
+        cursor: pointer;
+        margin: 5px;
+        position: relative;
+
+        &:before {
+            background: $primary;
+            bottom: 0;
+            content: '';
+            left: 0;
+            opacity: .3;
+            position: absolute;
+            right: 0;
+            transition: all .3s ease;
+            top: 100%;
+        }
+
+        &:hover:before {
+            top: 0;
+        }
+    }
+
+    &-img {
+        display: block;
+        height: 103px;
+        width: 115px;
+    }
+
 }
