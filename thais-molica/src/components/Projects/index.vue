@@ -1,16 +1,24 @@
 
 <script>
+    import Item from './item.vue';
     import './style.scss';
-    
 
   export default {
     name: "Projects",
+    components: {Item},
     data() {
         return {
             projects: [
                 {
                     name: "Livelo",
-                    photo: "http://thais-molica.github.io/img/livelo.png"
+                    photo: "http://thais-molica.github.io/img/livelo.png",
+                    content: {
+                        photo: 'http://thais-molica.github.io/img/livelo.png',
+                        description: [
+                            'Primeiro',
+                            'Segundo'
+                        ]
+                    }
                 },
                 {
                     name: "EnterPlay",
@@ -68,11 +76,12 @@
 
 <template>
     <div class="projects" id="projects">
-        <h2>Projetos</h2>
+        <h2 class="projects-title">Projetos</h2>
         <ul class="projects-list">
-            <li class="projects-item" v-for="(project, index) in projects" v-bind:key="index">
-                <img class="projects-img" :src="project.photo" :key="project.name" :alt="project.name">
-            </li>
+            <Item 
+            v-for="(project, index) in projects" 
+            v-bind:key="index" 
+            v-bind:item="project" />
         </ul>
     </div>
 </template>

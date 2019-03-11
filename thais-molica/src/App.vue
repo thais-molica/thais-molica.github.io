@@ -9,7 +9,6 @@
     title: "Thaís Molica - Front-end Developer",
     name: "app",
     components: {
-      // eslint-disable-next-line
       Header,
       About,
       Projects,
